@@ -1,4 +1,6 @@
 {
+  
+  "homepage": "http://jcarlson21.github.io/portfolio",
   "name": "jcarlson_portfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,8 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next build && next export",
-    "deploy": "gh-pages -d out"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "next": "14.2.2",

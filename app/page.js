@@ -92,7 +92,7 @@ export default function Home() {
               Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Hi! I'm a Computer Science and Physics student at Northeastern University. Get in touch and let&apos;s work together!
+            Hi! I&apos;m a Computer Science and Physics student at Northeastern University. Get in touch and let&apos;s work together!
             </p>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-10 md:h-96 md:w-96">
               <Image src={headshot} layout="fill" objectFit="cover" />
@@ -109,7 +109,7 @@ export default function Home() {
             solving nature. I study physics out of intellectual curiosity and wanting to better 
             understand our universe. Once I was comfortable coding, I began doing <a className="text-cyan-500" href="#projects">projects </a> 
             for fun and always with the intention of learning something new. Most notably, I am 
-            proud of an iOS app I made that can scan and solve sudoku puzzles using your phone's 
+            proud of an iOS app I made that can scan and solve sudoku puzzles using your phone&apos;s 
             camera. This experience taught me that I could learn new (programming) languages on 
             my own and break down a massive idea into achievable milestones. </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"> I co-oped at <a className="text-cyan-500" href="https://www.montai.com/"> Montai Health </a>

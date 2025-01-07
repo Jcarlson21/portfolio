@@ -15,12 +15,6 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import sudoku from "../public/sudoku.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 
 import headshot from '../public/headshot.png';
 
@@ -28,7 +22,7 @@ import headshot from '../public/headshot.png';
 
 
 export default function Home() {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -63,24 +57,26 @@ export default function Home() {
                 <button className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 fixed bottom-10 right-10" onClick={openModal}>Contact me!</button>
                 
                 <Modal
-                    isOpen={isModalOpen}
-                    onRequestClose={closeModal}
-                    className="modal"
-                    overlayClassName="overlay"
-                >
-                    <ul className="text- py-0 flex items-center justify-between">
-                        <h2 className="text-2xl pr-10 pb-2"><strong>Contact Information</strong></h2>
-                        <FaTimes
-                            onClick={closeModal}
-                            className="text-5xl left-100 cursor-pointer bg-cyan-500 rounded-md"
-                        />
-                    </ul>
-                    
-                    
-                    <p className="py-1 text-xl">+1 (401) 239-9654</p>
-                    <a className="text-cyan-500 text-xl" href="mailto:carlosn.jak@northeastern.edu">carlson.jak@northeastern.edu</a>
-                    
-                </Modal>
+                  isOpen={isModalOpen}
+                  onRequestClose={closeModal}
+                  className="modal"
+                  overlayClassName="overlay"
+>
+                  <ul className="text- py-0 flex items-center justify-between relative">
+                    <h2 className="text-2xl pr-10 pb-2"><strong>Contact Information</strong></h2>
+                    <FaTimes
+                      onClick={closeModal}
+                      className="text-2xl cursor-pointer bg-cyan-500 rounded-md absolute top-0 right-0"
+                      style={{
+                        transform: 'translate(-10%, -10%)', // Fine-tunes position
+                        padding: '4px',
+                      }}
+                    />
+                  </ul>
+    
+    <p className="py-1 text-xl">+1 (401) 239-9654</p>
+    <a className="text-cyan-500 text-xl" href="mailto:carlosn.jak@northeastern.edu">carlson.jak@northeastern.edu</a>
+</Modal>
               </li>
             </ul>
           </nav>
@@ -103,7 +99,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            I am a 3rd year Computer Science and Physics student. I have always been interested 
+            I&apos;m graduating in May 2025 with a BS in Computer Science and Physics. I have always been interested 
             in my STEM coursework, but when I began coding in high school for class and the 
             robotics team, I realized that I wanted to pursue computer science for its problem 
             solving nature. I study physics out of intellectual curiosity and wanting to better 
@@ -115,12 +111,10 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200"> I co-oped at <a className="text-cyan-500" href="https://www.montai.com/"> Montai Health </a>
             doing machine learning engineering for drug discovery. During my time there, 
             I became interested in the powerful applications of machine learning as well as 
-            the highly technical algorithms used in the process itself which I plan to study 
-            further while at Northeastern. I am fascinated by interpretability and I hope to learn and research 
-            more about it if I go into machine learning. I am not entirely sure of what I want 
-            to do with my career, but no matter what I do, I hope to be 
+            the highly technical algorithms used in the process itself which I am studying
+            further while at Northeastern. Beyond Northeastern, I hope to be 
             in a position where I can use my natural curiosity as an asset and work to solve a wide 
-            variety of different problems.
+            variety of engaging problems.
             </p>
           </div>
           </section>
